@@ -1,4 +1,23 @@
-<p>roles works!</p>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Role Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let role of roleList; let srno = index">
+          <td>{{ srno + 1 }}</td>
+          <td>{{ role.role }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- <p>roles works!</p>
 <div class="row">
   <div class="col-3">
     <p>{{firstName}}</p>
@@ -42,4 +61,4 @@
   <div class="col">
         <button class="btn btn-success" (click)="showMessage('Welcome DotNet')">Show DotNet Msg</button>
   </div>
-</div>
+</div> -->
